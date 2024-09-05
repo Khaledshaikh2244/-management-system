@@ -6,7 +6,8 @@ const productController = require('../controllers/productController');
 
 // products endpointes
 router.get('/' , productController.getAllProducts);
-router.post('/',productController.addProduct);
-router.put('/:id',productController.updateProduct);
+router.post('/',upoload.single('image'),productController.addProduct);
+router.put('/:id',upoload.single('image') ,productController.updateProduct);
+
 
 module.exports = router;
