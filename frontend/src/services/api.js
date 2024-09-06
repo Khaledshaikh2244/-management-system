@@ -1,4 +1,5 @@
-import axios from ('axios');
+// const axios = require('axios'); 
+import axios from 'axios';
 
 const API_URL = 'http://local:5000/api';
 
