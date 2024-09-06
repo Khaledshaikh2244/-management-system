@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import {getProducs} from '../../services/api';
+import {getProducts} from '../../services/api';
 
 
 
@@ -11,7 +11,7 @@ import {getProducs} from '../../services/api';
 useEffect(() => {
     const fetchProducts = async () =>{
         try {
-            const response = await getProducs();
+            const response = await getProducts();
             setProducts(response.data);
         } catch (error) {
             console.log('Eror fetching products', error);
